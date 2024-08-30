@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="../styles/media.css">
+</head>
+<body>
+    <header>
+        <nav>
+           <a href="../index.html">Home</a>
+        <a href="./table.html">Table</a>
+        <a href="../form.html">Form</a>
+        </nav>
+    </header>
+    <div class="media-container">
+        <main>
+        <h1>About Me</h1>
+
+        <!-- Picture element -->
+             <section class="picture-container">
+                 <picture>
+                     <source media="(max-width: 750px)" srcset="../img/my-photo.jpg">
+                     <source media="(max-width: 1500px)" srcset="../img/my-photo.jpg">
+                     <source media="(min-width: 2500px)" srcset="../img/my-photo.jpg">
+                     <img src="../img/my-photo.jpg" alt="My Journey Image">
+                 </picture>
+                 <p class="my-sef">This is Me</p>
+             </section>
+     
+             <!-- Audio element -->
+             <section id="audio" class="audio-container">
+                 <audio controls>
+                     <source src="../audio/Frank_Edwards_-_Eagle's_Wings.mp3" type="audio/mpeg" />
+                     Your browser does not support the audio element.
+                 </audio>
+                 <p>This is a Music</p>
+             </section>
+     
+             <!-- Video element -->
+             <section id="video" class="video-container">
+                 <video controls autoplay muted>
+                     <source src="../video/pegga pig.mp4" type="video/mp4" />
+                     Your browser does not support the video tag.
+                 </video>
+                 <p>This a Video</p>
+             </section>
+     
+             <!-- Image element -->
+             <section class="image-container">
+                <div class="image-content">
+                    <img src="../img/my-photo.jpg" alt="photo">
+                    <img src="../img/my-photo-2.jpg" alt="photo">
+                </div>
+
+                 <p>This is Me. <strong><b>An Aspiring Best Developer</b></strong></p>
+             </section>
+             <!-- https://youtu.be/TyskcLbCkqE -->
+     
+             <!-- Embedded content (iframe) -->
+              
+             <section id="iframe" class="iframe-container">
+                <iframe
+    src="https://www.youtube.com/embed/X6YvTbNIQvU"
+    title="Video Title"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    frameborder="0"
+    width="100%"
+    height="auto">
+</iframe>
+
+            
+</iframe>
+
+                 <p>This is an Iframe</p>
+             </section>
+     
+             <!-- Additional content -->
+             <section class="extra-content">
+                 <h2 id="myJourney">My Story Journey</h2>
+                 <details>
+                    <summary>
+                        Moving forward isn't easy, but do you know what's even harder?
+                    </summary>
+                    <p>
+                        Going backward. The reason is that you'll have to start all over again.
+                    </p>
+                </details>
+                
+
+                
+                 <h2 id="goals">My Goals</h2>
+                 <p>
+                     My Goals are simple, Do It is Achieving It.
+                 </p>
+             </section>
+         </div>
+    </main>
+</body>
+</html>

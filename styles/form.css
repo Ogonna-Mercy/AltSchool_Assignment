@@ -1,0 +1,258 @@
+/* Start of Unoversal Selctor */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+      background-color: #087fff;
+      padding: 20px 0;
+      text-align: center;
+  }
+  
+  nav a {
+      color: #000;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+  }
+  
+  nav a:hover {
+      color: #fff;
+  }
+  
+  .MainContainer {
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+  }
+  
+  /* start of logo-container */
+  .logo-container {
+    /* border: 2px solid green; */
+    padding: 50px;
+    width: 100%;
+    background-color: rgba(196, 192, 192, 0.342);
+    overflow: auto;
+  }
+  
+  .logo-container::-webkit-scrollbar,
+  .form-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .image-container {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-container img {
+    display: block;
+    height: auto;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .header-text {
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .header-text h1 {
+    width: 100%;
+    max-width: 60%;
+    font-size: 3vw;
+    text-align: center;
+    /* border: 2px solid blue; */
+  }
+  
+  .icons {
+    /* border: 2px solid black; */
+    /* margin: 10px 0 15px 0; */
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+  }
+  
+  .tel-text,
+  .copyright {
+    /* border: 2px solid green; */
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .tel-text a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  /* Start of Form Container */
+  .form-container {
+    /* border: 2px solid yellow; */
+    width: 100%;
+    padding: 2rem;
+    /* 2 x 16px = 32px */
+    overflow: auto;
+  }
+  
+  .sign-text {
+    /* border: 2px solid red; */
+    padding: 10px;
+    text-align: right;
+  }
+  
+  .sign-text p {
+    font-size: 20px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  
+  .sign-text p a {
+    text-decoration: none;
+    color: blue;
+  }
+  
+  .form-section {
+    margin-top: 30px;
+    /* border: 2px solid black; */
+  }
+  
+  .form-section h2 {
+    font-size: 30px;
+    color: rgb(91, 138, 226);
+    margin-bottom: 5px;
+  }
+  
+  .form-section .apply-text {
+    margin-bottom: 10px;
+    font-size: 19px;
+    color: grey;
+  }
+  
+  .label-input-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    /* border: 2px solid red; */
+  }
+  
+  .label-input-container .label-input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* border: 2px solid green; */
+  }
+  
+  .label-input label {
+    font-size: 2vw;
+  }
+  
+  .label-input input,
+  .label-input select {
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: rgba(209, 201, 201, 0.452);
+  }
+  
+  .label-input input:hover,
+  .label-input select:hover {
+    border: 2px solid rgb(152, 205, 223);
+  }
+  
+  .label-input input[type="text"],
+  .label-input input[type="email"],
+  .label-input input[type="number"],
+  .label-input input[type="date"],
+  .label-input select option {
+    font-size: 1vw;
+  }
+  
+  .form-text {
+    margin: 15px 0;
+    font-size: 20px;
+  }
+  
+  .form-text a {
+    text-decoration: none;
+    color: rgba(0, 0, 255, 0.726);
+  }
+  
+  .form-btn {
+    border: 2px solid blue;
+    text-align: center;
+  }
+  
+  .form-btn button {
+    background-color: rgba(24, 24, 243, 0.911);
+    padding: 10px;
+    width: 100%;
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: none;
+    outline: none;
+  }
+  
+  .logo-small-screen{
+      display: none;
+  }
+
+  .facebook{
+    border-radius: 50%;
+    background-color: rgba(19, 25, 243, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 27px;
+  }
+  
+  @media (max-width: 750px) {
+    .MainContainer {
+      display: flex;
+      flex-direction: column;
+      overflow: visible;
+    }
+  
+    .label-input-container {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .logo-container{
+      display: none;
+    }
+  
+    .logo-small-screen{
+      display: block;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .logo-small-screen img{
+      width: 100px;
+      height: 100px;
+    }
+  
+    .form-container{
+      overflow: visible;
+    }
+  
+    .label-input label,
+    .label-input input[type="text"],
+  .label-input input[type="email"],
+  .label-input input[type="number"],
+  .label-input input[type="date"],
+  .label-input select option {
+    font-size: 20px;
+  }
+  }
+  
