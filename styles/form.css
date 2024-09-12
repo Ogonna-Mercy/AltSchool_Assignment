@@ -41,28 +41,26 @@
     color: #fff;
   }
   
-  .MainContainer {
+  .main-container {
     display: flex;
     overflow: hidden;
     height: 100vh;
   }
   
-  /* start of logo-container */
-  .logo-container {
-    /* border: 2px solid green; */
+  /* start of  the logo */
+  .logo-content {
     padding: 50px;
     width: 100%;
     background-color: rgba(196, 192, 192, 0.342);
     overflow: auto;
   }
   
-  .logo-container::-webkit-scrollbar,
+  .logo-content::-webkit-scrollbar,
   .form-container::-webkit-scrollbar {
     display: none;
   }
   
   .image-container {
-    /* border: 2px solid red; */
     display: flex;
     justify-content: center;
   }
@@ -75,7 +73,6 @@
   }
   
   .header-text {
-    /* border: 2px solid green; */
     display: flex;
     justify-content: center;
     margin-top: 10px;
@@ -86,12 +83,9 @@
     max-width: 60%;
     font-size: 3vw;
     text-align: center;
-    /* border: 2px solid blue; */
   }
   
   .icons {
-    /* border: 2px solid black; */
-    /* margin: 10px 0 15px 0; */
     margin-top: 10px;
     display: flex;
     justify-content: center;
@@ -101,7 +95,6 @@
   
   .tel-text,
   .copyright {
-    /* border: 2px solid green; */
     text-align: center;
     margin-top: 10px;
   }
@@ -111,17 +104,14 @@
     text-decoration: none;
   }
   
-  /* Start of Form Container */
-  .form-container {
-    /* border: 2px solid yellow; */
+  /* Start of the Form Content */
+  .form-content {
     width: 100%;
     padding: 2rem;
-    /* 2 x 16px = 32px */
     overflow: auto;
   }
   
   .sign-text {
-    /* border: 2px solid red; */
     padding: 10px;
     text-align: right;
   }
@@ -138,12 +128,11 @@
   
   .form-section {
     margin-top: 30px;
-    /* border: 2px solid black; */
   }
   
   .form-section h2 {
     font-size: 30px;
-    color: rgb(91, 138, 226);
+    color: rgb(62, 98, 165);
     margin-bottom: 5px;
   }
   
@@ -157,14 +146,12 @@
     display: flex;
     gap: 20px;
     margin-top: 10px;
-    /* border: 2px solid red; */
   }
   
   .label-input-container .label-input {
     display: flex;
     flex-direction: column;
     width: 100%;
-    /* border: 2px solid green; */
   }
   
   .label-input label {
@@ -235,7 +222,7 @@
   }
   
   @media (max-width: 750px) {
-    .MainContainer {
+    .main-container {
       display: flex;
       flex-direction: column;
       overflow: visible;
@@ -246,7 +233,7 @@
       flex-direction: column;
     }
   
-    .logo-container{
+    .logo-content{
       display: none;
     }
   

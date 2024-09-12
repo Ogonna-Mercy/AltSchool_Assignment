@@ -188,4 +188,20 @@
     text-decoration: underline;
   }
   
-  
+  @media(max-width:750px){
+    .caption{
+       display: none;
+     }  
+
+     .myPictures {
+      height: 53vh;
+    }
+
+    .picture-2{
+      height: 70vh
+    }
+
+    .picture-2 .picture-container{
+      height: 67vh
+    }
+   }
